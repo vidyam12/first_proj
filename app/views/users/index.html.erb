@@ -1,0 +1,23 @@
+<h1>welcome to ruby</h1>
+<p>ruby on rails</p>
+
+<table border="1">
+  <tr>
+    <th>first name</th>
+    <th>last name</th>
+    <th>age</th>
+    <th>phone</th>
+  </tr>
+
+<%User.all.each do |user| %>
+<tr>
+     <td> <%= user.first_name%> </td>
+     <td><%= user.lastname%> </td>
+     <td><%= user.age%> </td>
+     <td><%= user.phone%> </td>
+   </tr>
+  <% end %>
+</table>
+
+
+
